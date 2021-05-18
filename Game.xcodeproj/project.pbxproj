@@ -68,7 +68,76 @@
 		EA88545E2650E09C00707583 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8854572650E09C00707583 /* GameViewModel.swift */; };
 		EA88545F2650E09C00707583 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8854572650E09C00707583 /* GameViewModel.swift */; };
 		EA8854602650E09C00707583 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8854572650E09C00707583 /* GameViewModel.swift */; };
+		EAE172E626545E0400E08783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE172E526545E0400E08783 /* Assets.xcassets */; };
+		EAE172ED26545E0400E08783 /* Emojimento Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EAE172EC26545E0400E08783 /* Emojimento Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EAE172F226545E0400E08783 /* GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE172F126545E0400E08783 /* GameApp.swift */; };
+		EAE172F626545E0400E08783 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE172F526545E0400E08783 /* NotificationController.swift */; };
+		EAE172F826545E0400E08783 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE172F726545E0400E08783 /* NotificationView.swift */; };
+		EAE172FA26545E0400E08783 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE172F926545E0400E08783 /* ComplicationController.swift */; };
+		EAE172FC26545E0500E08783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE172FB26545E0500E08783 /* Assets.xcassets */; };
+		EAE172FF26545E0500E08783 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE172FE26545E0500E08783 /* Preview Assets.xcassets */; };
+		EAE1730B26545E0500E08783 /* EmojimentoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE1730A26545E0500E08783 /* EmojimentoTests.swift */; };
+		EAE1731626545E0500E08783 /* EmojimentoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE1731526545E0500E08783 /* EmojimentoUITests.swift */; };
+		EAE1731A26545E0500E08783 /* Emojimento.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EAE172E326545E0200E08783 /* Emojimento.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EAE1732926545F0100E08783 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8854562650E09C00707583 /* GameView.swift */; };
+		EAE1732B26545F1600E08783 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8854572650E09C00707583 /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAE172EE26545E0400E08783 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 626FA65C23D6F9CB008170CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAE172EB26545E0400E08783;
+			remoteInfo = "Emojimento Extension";
+		};
+		EAE1730726545E0500E08783 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 626FA65C23D6F9CB008170CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAE172EB26545E0400E08783;
+			remoteInfo = "Emojimento Extension";
+		};
+		EAE1731226545E0500E08783 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 626FA65C23D6F9CB008170CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAE172E226545E0200E08783;
+			remoteInfo = Emojimento;
+		};
+		EAE1731826545E0500E08783 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 626FA65C23D6F9CB008170CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAE172E226545E0200E08783;
+			remoteInfo = Emojimento;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EAE1731B26545E0500E08783 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EAE1731A26545E0500E08783 /* Emojimento.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE1731E26545E0500E08783 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EAE172ED26545E0400E08783 /* Emojimento Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		62041AD023DD1FEB00F958D1 /* SKTileDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKTileDefinition.swift; sourceTree = "<group>"; };
@@ -102,6 +171,24 @@
 		62F7A79423D80182009B2A7B /* SpriteSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteSheet.swift; sourceTree = "<group>"; };
 		EA8854562650E09C00707583 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		EA8854572650E09C00707583 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		EAE172E326545E0200E08783 /* Emojimento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emojimento.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE172E526545E0400E08783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAE172E726545E0400E08783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE172EC26545E0400E08783 /* Emojimento Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Emojimento Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE172F126545E0400E08783 /* GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameApp.swift; sourceTree = "<group>"; };
+		EAE172F526545E0400E08783 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EAE172F726545E0400E08783 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		EAE172F926545E0400E08783 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		EAE172FB26545E0500E08783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAE172FE26545E0500E08783 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EAE1730026545E0500E08783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE1730126545E0500E08783 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EAE1730626545E0500E08783 /* EmojimentoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmojimentoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE1730A26545E0500E08783 /* EmojimentoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojimentoTests.swift; sourceTree = "<group>"; };
+		EAE1730C26545E0500E08783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE1731126545E0500E08783 /* EmojimentoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmojimentoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE1731526545E0500E08783 /* EmojimentoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojimentoUITests.swift; sourceTree = "<group>"; };
+		EAE1731726545E0500E08783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +213,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAE172E926545E0400E08783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE1730326545E0500E08783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE1730E26545E0500E08783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -136,6 +244,10 @@
 				626FA66B23D6F9CD008170CD /* Game iOS */,
 				626FA67C23D6F9CD008170CD /* Game tvOS */,
 				626FA68D23D6F9CD008170CD /* Game macOS */,
+				EAE172E426545E0200E08783 /* Emojimento */,
+				EAE172F026545E0400E08783 /* Emojimento Extension */,
+				EAE1730926545E0500E08783 /* EmojimentoTests */,
+				EAE1731426545E0500E08783 /* EmojimentoUITests */,
 				626FA66A23D6F9CD008170CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -164,6 +276,10 @@
 				626FA66923D6F9CD008170CD /* Game.app */,
 				626FA67B23D6F9CD008170CD /* Game.app */,
 				626FA68C23D6F9CD008170CD /* Game.app */,
+				EAE172E326545E0200E08783 /* Emojimento.app */,
+				EAE172EC26545E0400E08783 /* Emojimento Extension.appex */,
+				EAE1730626545E0500E08783 /* EmojimentoTests.xctest */,
+				EAE1731126545E0500E08783 /* EmojimentoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -294,6 +410,56 @@
 			path = Generics;
 			sourceTree = "<group>";
 		};
+		EAE172E426545E0200E08783 /* Emojimento */ = {
+			isa = PBXGroup;
+			children = (
+				EAE172E526545E0400E08783 /* Assets.xcassets */,
+				EAE172E726545E0400E08783 /* Info.plist */,
+			);
+			path = Emojimento;
+			sourceTree = "<group>";
+		};
+		EAE172F026545E0400E08783 /* Emojimento Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EAE172F126545E0400E08783 /* GameApp.swift */,
+				EAE172F526545E0400E08783 /* NotificationController.swift */,
+				EAE172F726545E0400E08783 /* NotificationView.swift */,
+				EAE172F926545E0400E08783 /* ComplicationController.swift */,
+				EAE172FB26545E0500E08783 /* Assets.xcassets */,
+				EAE1730026545E0500E08783 /* Info.plist */,
+				EAE1730126545E0500E08783 /* PushNotificationPayload.apns */,
+				EAE172FD26545E0500E08783 /* Preview Content */,
+			);
+			path = "Emojimento Extension";
+			sourceTree = "<group>";
+		};
+		EAE172FD26545E0500E08783 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EAE172FE26545E0500E08783 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EAE1730926545E0500E08783 /* EmojimentoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAE1730A26545E0500E08783 /* EmojimentoTests.swift */,
+				EAE1730C26545E0500E08783 /* Info.plist */,
+			);
+			path = EmojimentoTests;
+			sourceTree = "<group>";
+		};
+		EAE1731426545E0500E08783 /* EmojimentoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAE1731526545E0500E08783 /* EmojimentoUITests.swift */,
+				EAE1731726545E0500E08783 /* Info.plist */,
+			);
+			path = EmojimentoUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,10 +470,12 @@
 				626FA66523D6F9CD008170CD /* Sources */,
 				626FA66623D6F9CD008170CD /* Frameworks */,
 				626FA66723D6F9CD008170CD /* Resources */,
+				EAE1731B26545E0500E08783 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EAE1731926545E0500E08783 /* PBXTargetDependency */,
 			);
 			name = "Game iOS";
 			productName = "Little Wars iOS";
@@ -348,13 +516,83 @@
 			productReference = 626FA68C23D6F9CD008170CD /* Game.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EAE172E226545E0200E08783 /* Emojimento */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE1732626545E0500E08783 /* Build configuration list for PBXNativeTarget "Emojimento" */;
+			buildPhases = (
+				EAE172E126545E0200E08783 /* Resources */,
+				EAE1731E26545E0500E08783 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAE172EF26545E0400E08783 /* PBXTargetDependency */,
+			);
+			name = Emojimento;
+			productName = Emojimento;
+			productReference = EAE172E326545E0200E08783 /* Emojimento.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EAE172EB26545E0400E08783 /* Emojimento Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE1732526545E0500E08783 /* Build configuration list for PBXNativeTarget "Emojimento Extension" */;
+			buildPhases = (
+				EAE172E826545E0400E08783 /* Sources */,
+				EAE172E926545E0400E08783 /* Frameworks */,
+				EAE172EA26545E0400E08783 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Emojimento Extension";
+			productName = "Emojimento Extension";
+			productReference = EAE172EC26545E0400E08783 /* Emojimento Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		EAE1730526545E0500E08783 /* EmojimentoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE1732726545E0500E08783 /* Build configuration list for PBXNativeTarget "EmojimentoTests" */;
+			buildPhases = (
+				EAE1730226545E0500E08783 /* Sources */,
+				EAE1730326545E0500E08783 /* Frameworks */,
+				EAE1730426545E0500E08783 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAE1730826545E0500E08783 /* PBXTargetDependency */,
+			);
+			name = EmojimentoTests;
+			productName = EmojimentoTests;
+			productReference = EAE1730626545E0500E08783 /* EmojimentoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAE1731026545E0500E08783 /* EmojimentoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE1732826545E0500E08783 /* Build configuration list for PBXNativeTarget "EmojimentoUITests" */;
+			buildPhases = (
+				EAE1730D26545E0500E08783 /* Sources */,
+				EAE1730E26545E0500E08783 /* Frameworks */,
+				EAE1730F26545E0500E08783 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAE1731326545E0500E08783 /* PBXTargetDependency */,
+			);
+			name = EmojimentoUITests;
+			productName = EmojimentoUITests;
+			productReference = EAE1731126545E0500E08783 /* EmojimentoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		626FA65C23D6F9CB008170CD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Szymon Lorenz";
 				TargetAttributes = {
@@ -366,6 +604,20 @@
 					};
 					626FA68B23D6F9CD008170CD = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					EAE172E226545E0200E08783 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					EAE172EB26545E0400E08783 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					EAE1730526545E0500E08783 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = EAE172EB26545E0400E08783;
+					};
+					EAE1731026545E0500E08783 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = EAE172E226545E0200E08783;
 					};
 				};
 			};
@@ -385,6 +637,10 @@
 				626FA66823D6F9CD008170CD /* Game iOS */,
 				626FA67A23D6F9CD008170CD /* Game tvOS */,
 				626FA68B23D6F9CD008170CD /* Game macOS */,
+				EAE172E226545E0200E08783 /* Emojimento */,
+				EAE172EB26545E0400E08783 /* Emojimento Extension */,
+				EAE1730526545E0500E08783 /* EmojimentoTests */,
+				EAE1731026545E0500E08783 /* EmojimentoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -426,6 +682,37 @@
 				626FA69B23D6F9CD008170CD /* GameScene.sks in Resources */,
 				6248291423F0E5CD006EDB5F /* Camera.png in Resources */,
 				626FA6A123D6F9CD008170CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE172E126545E0200E08783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE172E626545E0400E08783 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE172EA26545E0400E08783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE172FF26545E0500E08783 /* Preview Assets.xcassets in Resources */,
+				EAE172FC26545E0500E08783 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE1730426545E0500E08783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE1730F26545E0500E08783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,7 +783,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAE172E826545E0400E08783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE172F626545E0400E08783 /* NotificationController.swift in Sources */,
+				EAE172FA26545E0400E08783 /* ComplicationController.swift in Sources */,
+				EAE172F226545E0400E08783 /* GameApp.swift in Sources */,
+				EAE1732926545F0100E08783 /* GameView.swift in Sources */,
+				EAE172F826545E0400E08783 /* NotificationView.swift in Sources */,
+				EAE1732B26545F1600E08783 /* GameViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE1730226545E0500E08783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE1730B26545E0500E08783 /* EmojimentoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE1730D26545E0500E08783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE1731626545E0500E08783 /* EmojimentoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAE172EF26545E0400E08783 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAE172EB26545E0400E08783 /* Emojimento Extension */;
+			targetProxy = EAE172EE26545E0400E08783 /* PBXContainerItemProxy */;
+		};
+		EAE1730826545E0500E08783 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAE172EB26545E0400E08783 /* Emojimento Extension */;
+			targetProxy = EAE1730726545E0500E08783 /* PBXContainerItemProxy */;
+		};
+		EAE1731326545E0500E08783 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAE172E226545E0200E08783 /* Emojimento */;
+			targetProxy = EAE1731226545E0500E08783 /* PBXContainerItemProxy */;
+		};
+		EAE1731926545E0500E08783 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAE172E226545E0200E08783 /* Emojimento */;
+			targetProxy = EAE1731826545E0500E08783 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		626FA67323D6F9CD008170CD /* LaunchScreen.storyboard */ = {
@@ -769,6 +1108,186 @@
 			};
 			name = Release;
 		};
+		EAE1731C26545E0500E08783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z5C7X6723;
+				IBSC_MODULE = Emojimento_Extension;
+				INFOPLIST_FILE = Emojimento/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = game.io.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		EAE1731D26545E0500E08783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z5C7X6723;
+				IBSC_MODULE = Emojimento_Extension;
+				INFOPLIST_FILE = Emojimento/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = game.io.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		EAE1731F26545E0500E08783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Emojimento Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8F6Z4VKPC5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Emojimento Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = game.io.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		EAE1732026545E0500E08783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Emojimento Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8F6Z4VKPC5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Emojimento Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = game.io.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		EAE1732126545E0500E08783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F6Z4VKPC5;
+				INFOPLIST_FILE = EmojimentoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = game.io.EmojimentoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emojimento Extension.appex/Emojimento Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		EAE1732226545E0500E08783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F6Z4VKPC5;
+				INFOPLIST_FILE = EmojimentoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = game.io.EmojimentoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emojimento Extension.appex/Emojimento Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		EAE1732326545E0500E08783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F6Z4VKPC5;
+				INFOPLIST_FILE = EmojimentoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = game.io.EmojimentoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = Emojimento;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		EAE1732426545E0500E08783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F6Z4VKPC5;
+				INFOPLIST_FILE = EmojimentoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = game.io.EmojimentoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = Emojimento;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -804,6 +1323,42 @@
 			buildConfigurations = (
 				626FA6AB23D6F9CD008170CD /* Debug */,
 				626FA6AC23D6F9CD008170CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAE1732526545E0500E08783 /* Build configuration list for PBXNativeTarget "Emojimento Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE1731F26545E0500E08783 /* Debug */,
+				EAE1732026545E0500E08783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAE1732626545E0500E08783 /* Build configuration list for PBXNativeTarget "Emojimento" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE1731C26545E0500E08783 /* Debug */,
+				EAE1731D26545E0500E08783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAE1732726545E0500E08783 /* Build configuration list for PBXNativeTarget "EmojimentoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE1732126545E0500E08783 /* Debug */,
+				EAE1732226545E0500E08783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAE1732826545E0500E08783 /* Build configuration list for PBXNativeTarget "EmojimentoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE1732326545E0500E08783 /* Debug */,
+				EAE1732426545E0500E08783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

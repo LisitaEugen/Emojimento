@@ -16,9 +16,19 @@ struct GameView: View {
         VStack {
             HStack {
                 Text("Steps:")
-                    .font(.largeTitle)
+                    .ifOS(.watchOS) {
+                        $0.font(.subheadline)
+                    }
+                    .ifOS(.iOS, .tvOS, .macOS) {
+                        $0.font(.largeTitle)
+                    }
                 Text("\(viewModel.steps)")
-                    .font(.largeTitle)
+                    .ifOS(.watchOS) {
+                        $0.font(.subheadline)
+                    }
+                    .ifOS(.iOS, .tvOS, .macOS) {
+                        $0.font(.largeTitle)
+                    }
             }
             Spacer()
             if viewModel.isFinished {
@@ -30,23 +40,30 @@ struct GameView: View {
                         viewModel.newGame()
                     }) {
                         Text("New Game?")
-                            .font(.title)
+                            .ifOS(.watchOS) {
+                                $0.font(.subheadline)
+                            }
+                            .ifOS(.iOS, .tvOS, .macOS) {
+                                $0.font(.title)
+                            }
                     }
-                    .buttonStyle(CustomButtonStyle())
+                    .ifOS(.iOS, .tvOS, .macOS) {
+                        $0.buttonStyle(CustomButtonStyle())
+                    }
                 }
             } else {
                 GeometryReader { geometry in
                     Group {
                         if #available(tvOS 14.0, iOS 14.0, macOS 11.0, *) {
                             let columns: [GridItem] = Array(repeating: .init(.flexible()), count: Int(nb))
-                            LazyVGrid(columns: columns, spacing: 5) {
+                            LazyVGrid(columns: columns, spacing: 1) {
                                 ForEach(viewModel.squares, id: \.id) { square in
                                     Button(action: {
                                         print(square.emoji)
                                         viewModel.toggle(square)
                                     }) {
                                         Text(square.hidden ? "❓" : square.emoji)
-                                            .font(.title)
+                                            .font(.subheadline)
                                             .padding()
                                     }
                                     .buttonStyle(CustomButtonStyle())
@@ -79,6 +96,9 @@ struct GameView: View {
                                 }) {
                                     Text(square.hidden ? "❓" : square.emoji)
                                         .font(.title)
+                                        .ifOS(.watchOS) {
+                                            $0.font(.subheadline)
+                                        }
                                         .padding()
                                 }
                                 .buttonStyle(CustomButtonStyle())
@@ -102,7 +122,9 @@ struct CustomButtonStyle: ButtonStyle {
                 RoundedRectangle(cornerRadius: 4)
                     .stroke(Color.gray, lineWidth: 1)
             )
-            .padding()
+            .ifOS(.iOS, .tvOS, .macOS) {
+                $0.padding()
+            }
     }
 }
 
@@ -110,5 +132,54 @@ struct CustomButtonStyle: ButtonStyle {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         GameView().environmentObject(GameViewModel())
+    }
+}
+
+
+enum OperatingSystem {
+    case macOS
+    case iOS
+    case tvOS
+    case watchOS
+    
+    #if os(macOS)
+    static let current = macOS
+    #elseif os(iOS)
+    static let current = iOS
+    #elseif os(tvOS)
+    static let current = tvOS
+    #elseif os(watchOS)
+    static let current = watchOS
+    #else
+    #error("Unsupported platform")
+    #endif
+}
+
+extension View {
+    /**
+     Conditionally apply modifiers depending on the target operating system.
+     
+     ```
+     struct ContentView: View {
+     var body: some View {
+     Text("Unicorn")
+     .font(.system(size: 10))
+     .ifOS(.macOS, .tvOS) {
+     $0.font(.system(size: 20))
+     }
+     }
+     }
+     ```
+     */
+    @ViewBuilder
+    func ifOS<Content: View>(
+        _ operatingSystems: OperatingSystem...,
+        modifier: (Self) -> Content
+    ) -> some View {
+        if operatingSystems.contains(OperatingSystem.current) {
+            modifier(self)
+        } else {
+            self
+        }
     }
 }
