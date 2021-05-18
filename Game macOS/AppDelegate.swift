@@ -13,7 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var window: NSWindow!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        let contentView = ContentView()
+        let contentView = GameView().environmentObject(GameViewModel())
 
         // Create the window and set the content view.
         window = NSWindow(

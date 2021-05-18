@@ -62,6 +62,12 @@
 		62F7A79523D80182009B2A7B /* SpriteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7A79423D80182009B2A7B /* SpriteSheet.swift */; };
 		62F7A79623D80182009B2A7B /* SpriteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7A79423D80182009B2A7B /* SpriteSheet.swift */; };
 		62F7A79723D80182009B2A7B /* SpriteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7A79423D80182009B2A7B /* SpriteSheet.swift */; };
+		EA88545B2650E09C00707583 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8854562650E09C00707583 /* GameView.swift */; };
+		EA88545C2650E09C00707583 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8854562650E09C00707583 /* GameView.swift */; };
+		EA88545D2650E09C00707583 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8854562650E09C00707583 /* GameView.swift */; };
+		EA88545E2650E09C00707583 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8854572650E09C00707583 /* GameViewModel.swift */; };
+		EA88545F2650E09C00707583 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8854572650E09C00707583 /* GameViewModel.swift */; };
+		EA8854602650E09C00707583 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8854572650E09C00707583 /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +100,8 @@
 		6288863923EFBA6C0060EB25 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6288863B23EFBB010060EB25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		62F7A79423D80182009B2A7B /* SpriteSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteSheet.swift; sourceTree = "<group>"; };
+		EA8854562650E09C00707583 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		EA8854572650E09C00707583 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +143,8 @@
 		626FA66023D6F9CB008170CD /* Game Shared */ = {
 			isa = PBXGroup;
 			children = (
+				EA8854562650E09C00707583 /* GameView.swift */,
+				EA8854572650E09C00707583 /* GameViewModel.swift */,
 				62F7A79323D80171009B2A7B /* Generics */,
 				62F7A79223D8016A009B2A7B /* Extensions */,
 				62F7A79123D80164009B2A7B /* Models */,
@@ -430,6 +440,8 @@
 				627F3E7925BC0E4F00A73942 /* Bundle.swift in Sources */,
 				6288863C23EFBB010060EB25 /* ContentView.swift in Sources */,
 				6273F10725386F7000F03E4A /* SceneView.swift in Sources */,
+				EA88545E2650E09C00707583 /* GameViewModel.swift in Sources */,
+				EA88545B2650E09C00707583 /* GameView.swift in Sources */,
 				62041AD523DD210500F958D1 /* SKTileGroupRule.swift in Sources */,
 				627F3E7625BC0E4F00A73942 /* Color.swift in Sources */,
 				62041AD123DD1FEB00F958D1 /* SKTileDefinition.swift in Sources */,
@@ -449,9 +461,11 @@
 				62F7A79623D80182009B2A7B /* SpriteSheet.swift in Sources */,
 				627F3E7A25BC0E4F00A73942 /* Bundle.swift in Sources */,
 				6288866D23EFC19B0060EB25 /* ContentView.swift in Sources */,
+				EA88545F2650E09C00707583 /* GameViewModel.swift in Sources */,
 				62041AD623DD210500F958D1 /* SKTileGroupRule.swift in Sources */,
 				62041AD223DD1FEB00F958D1 /* SKTileDefinition.swift in Sources */,
 				627F3E7725BC0E4F00A73942 /* Color.swift in Sources */,
+				EA88545C2650E09C00707583 /* GameView.swift in Sources */,
 				626FA69D23D6F9CD008170CD /* GameScene.swift in Sources */,
 				6248296B23F0E832006EDB5F /* Screen.swift in Sources */,
 				62041ADA23DD48BE00F958D1 /* SKTileGroup.swift in Sources */,
@@ -468,9 +482,11 @@
 				62F7A79723D80182009B2A7B /* SpriteSheet.swift in Sources */,
 				627F3E7B25BC0E4F00A73942 /* Bundle.swift in Sources */,
 				62041AD723DD210500F958D1 /* SKTileGroupRule.swift in Sources */,
+				EA8854602650E09C00707583 /* GameViewModel.swift in Sources */,
 				6288866F23EFC45E0060EB25 /* ContentView.swift in Sources */,
 				62041AD323DD1FEB00F958D1 /* SKTileDefinition.swift in Sources */,
 				627F3E7825BC0E4F00A73942 /* Color.swift in Sources */,
+				EA88545D2650E09C00707583 /* GameView.swift in Sources */,
 				626FA69E23D6F9CD008170CD /* GameScene.swift in Sources */,
 				6248296C23F0E832006EDB5F /* Screen.swift in Sources */,
 				62041ADB23DD48BE00F958D1 /* SKTileGroup.swift in Sources */,
@@ -561,8 +577,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -616,8 +632,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
